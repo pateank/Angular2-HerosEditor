@@ -18,7 +18,7 @@ import { HeroSearchComponent } from './hero-search.component';
     FormsModule,
     AppRoutingModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 50 })
+    //InMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 50 })
   ],
   declarations: [
     AppComponent,
