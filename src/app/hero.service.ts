@@ -7,7 +7,7 @@ import { Hero } from './hero';
 
 @Injectable()
 export class HeroService {
-  private appUrl = 'http://hero-demo-dev.us-west-2.elasticbeanstalk.com';
+  private appUrl = 'http://herodynamodbservice-dev.us-west-2.elasticbeanstalk.com';
   //private appUrl = 'http://localhost:8080';
   private heroListUrl = this.appUrl + '/heroes';  
   private addHeroUrl = this.appUrl + '/hero/update';
