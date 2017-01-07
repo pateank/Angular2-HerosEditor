@@ -7,8 +7,6 @@ phases:
   build:
     commands:
       - npm run build:prod
-      - aws s3 cp dist/ s3://heroeditor.com/ --recursive 
-
-artifacts:
-  files:
-    - dist/**/*
+  post-build:
+    commands:
+      - aws s3 sync dist/ s3://heroeditor.com/ --recursive 
