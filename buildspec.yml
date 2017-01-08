@@ -7,4 +7,5 @@ phases:
   build:
     commands:
       - npm run build:prod
+      - aws s3 rm s3://heroeditor.com/ --recursive
       - aws s3 cp dist/ s3://heroeditor.com/ --recursive
